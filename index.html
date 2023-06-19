@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color Conversion Application</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <div class="main-container">
+    <!-- HEADER -->
+    <header class="block">
+      <ul class="header-menu horizontal-list">
+        <li>
+            <button class="mode-button active" id="rgb-mode-button">RGB</button>
+        </li>
+        <li>
+          <button class="mode-button" id="hex-mode-button">HEX</button>
+        </li>
+        <li>
+          <button class="mode-button" id="hsl-mode-button">HSL</button>
+        </li>
+    </ul>
+    </header>
+      <!-- END HEADER -->
+
+    <main>
+        <!-- RGB -->
+        <div id="rgb-input-section" class="input-section">
+          <label for="red-input">Red</label>
+          <div class="input-field">
+            <span>0</span><input type="range" id="red-slider" class="slider" min="0" max="255" step="1" value="128"><span>255</span>
+            <input type="number" id="red-input"  min="0" max="255">
+          </div>
+          <label for="green-input">Green</label>
+          <div class="input-field">
+            <span>0</span><input type="range" id="green-slider" class="slider" min="0" max="255" step="1" value="128"><span>255</span>
+            <input type="number" id="green-input"  min="0" max="255">
+          </div>
+          <label for="blue-input">Blue</label>
+          <div class="input-field">
+            <span>0</span><input type="range" id="blue-slider" class="slider" min="0" max="255" step="1" value="128"><span>255</span>
+            <input type="number" id="blue-input"  min="0" max="255">
+          </div>
+        </div>
+
+        <!-- HEX -->
+        <div id="hex-input-section" class="input-section hidden">
+          <label for="hex-input">Hex Code</label>
+          <div class="input-field">
+            <input type="text" id="hex-input">
+          </div>
+        </div>
+
+        <!-- HSL -->
+        <div id="hsl-input-section" class="input-section hidden">
+          <label for="hue-input">Hue</label>
+          <div class="input-field">
+            <span>0</span><input type="range" id="hue-slider" class="slider" min="0" max="360" step="1"><span>360</span>
+            <input type="number" id="hue-input"  min="0" max="360">
+          </div>
+          <label for="saturation-input">Saturation</label>
+          <div class="input-field">
+            <span>0%</span><input type="range" id="saturation-slider" class="slider" min="0" max="100" step="1"><span>100%</span>
+            <input type="number" id="saturation-input"  min="0" max="100">
+          </div>
+          <label for="luminance-input">Luminance</label>
+          <div class="input-field">
+            <span>0%</span><input type="range" id="luminance-slider" class="slider" min="0" max="100" step="1"><span>100%</span>
+            <input type="number" id="luminance-input"  min="0" max="100">
+          </div>
+        </div>
+
+        <button id="convert-button">CONVERT</button>
+        
+      <div id="output-section">
+        <div id="color-block"></div>
+        <div id="converted-values">
+          <div class="input-field"><h2>HUE: </h2><h2 class="result-value" id="converted_hue"></h2></div>
+          <div class="input-field"><h2>SATURATION: </h2><h2 class="result-value" id="converted_sat"></h2></div>
+          <div class="input-field"><h2>LUMINANCE: </h2><h2 class="result-value" id="converted_lum"></h2></div>
+        </div>
+      </div>
+    </main>
+
+    <script src="script.js"></script>
+  </div>
+</body>
+
+</html>

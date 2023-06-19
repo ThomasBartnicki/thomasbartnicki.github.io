@@ -1,0 +1,244 @@
+/** OTHER STUFF **/
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+
+
+
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;  
+  }
+  
+  body {
+      background: #1f253d;
+  }
+
+  a {
+    text-decoration: none;
+    font-size: 15px;
+}
+    a:hover {
+        text-decoration: underline;
+    }
+
+label {
+    width: 50px;
+    margin: auto;
+    text-align: center;
+}
+
+h1, h2, p, a, span, label {
+    color: #fff;
+}
+    .scnd-font-color {
+        color: #9099b7;
+    }
+span {
+    margin-left: 10px;
+    margin-right: 10px;
+    font-size: 15px;
+    width: 25px;
+    text-align: left;
+}
+
+.horizontal-list {
+    margin: auto;
+    padding: 0;
+    list-style-type: none;
+}
+    .horizontal-list li {
+        float: left;
+    }
+
+.main-container {
+    font-family: 'Ubuntu', sans-serif;
+    width: auto;
+    height: 1725px;
+}	
+
+
+.mode-button {
+    background-color: transparent;
+    border: none;
+    color: #fff;
+    text-align: center;
+    transition-duration: 0.2s;
+    padding: 0 27px;
+    display: block;
+    line-height: 74px;
+    font-size: 17px;
+}
+
+.mode-button:hover {
+    background: #50597b;
+    border-bottom: 4px solid #11a8ab;
+}
+
+.mode-button.active {
+    background: #50597b;
+    border-bottom: 4px solid #11a8ab;
+}
+
+/*********************************************** HEADER ***********************************************/
+header {
+    height: 80px;
+}
+    .header-menu {
+        font-size: 17px;
+        line-height: 80px;
+    }
+        .header-menu li {
+            position: relative;
+            -webkit-transform: translateZ(0); /** To avoid a flash when hover messages **/
+        }
+    .header-menu-tab {
+        padding: 0 27px;
+        display: block;
+        line-height: 74px;
+        font-size: 17px;
+        -webkit-transition: background .3s;
+        transition: background .3s;
+    }
+#rgb-mode-button:hover, #rgb-mode-button.active {
+    background: #50597b;
+    border-bottom: 4px solid #11a8ab;
+    text-decoration: none;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+#hex-mode-button:hover, #hex-mode-button.active {
+    background: #50597b;
+    border-bottom: 4px solid #11a8ab;
+    text-decoration: none;
+}
+#hsl-mode-button:hover, #hsl-mode-button.active {
+    background: #50597b;
+    border-bottom: 4px solid #11a8ab;
+    text-decoration: none;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+
+main {
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 20px;
+}
+
+#convert-button {
+    background: #11a8ab;
+    color: #fff;
+    border: none;
+    margin-top: 10px;
+    transition-duration: 0.2s;
+    display: block;
+	width: 175px;
+	line-height: 50px;
+	font-size: 16px;
+	font-weight: 700;
+	text-align: center;
+	margin: 0 auto;
+	border-radius: 5px;
+}
+#convert-button:hover{
+    background: #0F9295;
+}
+
+/** CONTAINERS **/
+.container {
+    width: 300px;
+}
+    .block {
+        background: #394264;
+        border-radius: 5px;
+        width: fit-content;
+        margin: auto;
+        margin-bottom: 25px;
+    }
+
+
+/** INPUT SELECTION **/
+.input-section {
+    margin-bottom: 20px;
+}
+
+.hidden {
+display: none;
+}
+
+.input-field {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    margin-top: 5px;
+    padding: 10px;
+    height: 50px;
+    background: #394264;
+    border-radius: 5px;
+}
+
+.slider {
+    flex-grow: 1;
+    width: 400px;
+    margin: auto;
+}
+
+input[type=number]{
+    background: #50597b;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    width: 60px;
+    height: 30px;
+    margin-left: 10px;
+    border-bottom: 2px solid #11a8ab;
+    text-align: center;
+    font-size: 15px;
+}
+
+input[type=text]{
+    background: #50597b;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    width: 120px;
+    height: 30px;
+    margin-left: 10px;
+    padding-left: 10px;
+    border-bottom: 2px solid #11a8ab;
+    text-align: left;
+    font-size: 15px;
+}
+
+#output-section {
+    margin-top: 20px;
+}
+
+#color-block {
+    width: auto;
+    height: 40px;
+    margin-bottom: 10px;
+  }
+
+input, select, textarea{
+    color: #fff;
+}
+
+.result-value {
+    margin-left: auto;
+    margin-right: 0;
+}
